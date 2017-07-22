@@ -1,0 +1,20 @@
+1.参考地址：
+http://www.jianshu.com/p/4eaddcbe4d12
+http://www.jianshu.com/p/b7886271e21a
+
+2.遇到的坑：
+  2.1:hexo-util找不到：执行：npm install hexo-tuil --save  (如果还有其它的也找不到，可以类似添加安装)
+  
+  2.2:can not find git :执行：npm install hexo-deployer-git --save
+  
+  2.3:配置_config.ym时，:之后一定要有一个空格，切记切记。尤其是在配置deploy时，type,repo的:后要加一个空格，之前在type的冒号后没加空格，导致本地内容根
+  本没有部署到github,造成访问一直是404。
+  正常情况，你用hexo部署之后，会有提示:
+  To git@github.com:blackfi/blackfi.github.io.git
+     * [new branch]      HEAD -> master
+    Branch master set up to track remote branch master from git@github.com:blackfi/blackfi.github.io.git.
+    INFO  Deploy done: git
+    
+  2.4:删除theme下的landscape主题，github不支持jkelly的主题。
+  
+  
